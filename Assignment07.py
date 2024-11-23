@@ -4,10 +4,12 @@
 # with structured error handling
 # Change Log: (Who, When, What)
 #   <Rucha Nimbalkar>, <11/21/2024>,<Created Script>
+#   <Rucha Nimbalkar>, <11/21/2024>,<Re-organize the code and create Classes>
 #   <Your Name Here>,<Date>,<Activity>
 # ------------------------------------------------------------------------------------------ #
 import json
 
+#Data----------------------------------------------------------------------------------------------------#
 # Define the Data Constants
 MENU: str = '''
 ---- Course Registration Program ----
@@ -23,9 +25,14 @@ FILE_NAME: str = "Enrollments.json"
 # Define the Data Variables
 students: list = []  # a table of student data
 menu_choice: str  # Hold the choice made by the user.
+#--------------------------------------------------------------------------------------------------------#
+
+# Processing----------------------------------------------------------------------------------------------#
+class FileProcessor:
 
 
-# TODO Create a Person Class
+class Person:
+    
 # TODO Add first_name and last_name properties to the constructor (Done)
 # TODO Create a getter and setter for the first_name property (Done)
 # TODO Create a getter and setter for the last_name property (Done)
