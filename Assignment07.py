@@ -5,6 +5,8 @@
 # Change Log: (Who, When, What)
 #   <Rucha Nimbalkar>, <11/21/2024>,<Created Script>
 #   <Rucha Nimbalkar>, <11/21/2024>,<Re-organize the code and create Classes>
+#   <Rucha Nimbalkar>, <11/23/2024>,<Added classes ()>
+#   <Rucha Nimbalkar>, <11/24/2024>,<Added attributes to the student class>
 #   <Your Name Here>,<Date>,<Activity>
 # ------------------------------------------------------------------------------------------ #
 import json
@@ -30,9 +32,16 @@ menu_choice: str  # Hold the choice made by the user.
 # Processing----------------------------------------------------------------------------------------------#
 class FileProcessor:
 
-
 class Person:
-    
+
+
+class Student:
+    first_name:str
+    last_name:str
+    course_name:str
+
+class IO:
+
 # TODO Add first_name and last_name properties to the constructor (Done)
 # TODO Create a getter and setter for the first_name property (Done)
 # TODO Create a getter and setter for the last_name property (Done)
