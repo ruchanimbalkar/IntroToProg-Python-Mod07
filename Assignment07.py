@@ -45,9 +45,9 @@ class Person:
     '''
 
     # Add first_name and last_name properties to the constructor
-    def __init__(self, first_name:str = " ", last_name : str =" "): #parameters default to empty
-        self.__first_name = first_name
-        self.__last_name = last_name
+    def __init__(self, first_name:str = "", last_name : str =""): #parameters default to empty
+        self.first_name = first_name
+        self.last_name = last_name
 
     # Create a getter and setter for the first_name property
     @property #Getter or accessor
@@ -71,7 +71,7 @@ class Person:
         if value.isalpha() or value == " ": #last_name value is a character or empty string
             self.__last_name = value
         else:
-            raise ValueError("First name cannot have numbers!")
+            raise ValueError("Last name cannot have numbers!")
 
     # Override the __str__() method to return Person data
     def __str__(self):
@@ -265,8 +265,8 @@ class IO:
         for student in student_data:
             #print(f'Student {student["FirstName"]} '
                   #f'{student["LastName"]} is enrolled in {student["CourseName"]}')
-            message = "Student {} {} has registered for {}"
-            print(message.format(student.first_name, student.last_name, student.course_name))
+            #message = "Student {} {} has registered for {}"
+            print(student)
         print("-" * 50)
 
     @staticmethod
@@ -332,6 +332,6 @@ while (True):
 
     #Invalid menu choice
     else:
-        print("Please only choose option 1, 2, 3, or 4")
+        print("Invalid choice!")
 
 print("Program Ended")
